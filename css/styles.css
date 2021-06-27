@@ -1,0 +1,152 @@
+@font-face {
+	font-family: 'Yekan';
+	src: url('../fonts/Yekan.woff');
+}
+@font-face {
+	font-family: 'Dinar';
+	src: url('../fonts/Dinar.ttf');
+}
+
+body {
+	font-family: 'Yekan', 'Dinar';
+	margin: 0;
+	direction: rtl;
+}
+
+#result-box {
+	display: none;
+}
+
+.result-container {
+	background-color: #1A535C;
+	color: white;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	text-align: center;
+}
+
+.result-container h1 {
+	margin: 0;
+}
+
+.container {
+	text-align: center;
+	display: flex;
+	height: 100vh;
+}
+
+.tools-box {
+	width: 20%;
+	background-color: #1A535C;
+	color: white;
+}
+
+.quiz-box {
+	padding: 20px;
+	width: 80%;
+}
+
+.quiz-box #question {
+	width: 350px;
+	height: 350px;
+}
+
+.quiz-box hr {
+	border-color: #1A535C;
+}
+
+.choices {
+	margin-top: 25px;
+}
+
+.choices .answered {
+	border: 3px solid #1A535C;
+}
+
+.choices > img {
+	cursor: pointer;
+	border: 3px solid white;
+	padding: 5px 0 5px 8px;
+	width: 100px;
+	height: 100px;
+}
+.choices > img:hover {
+	border-color: #FF6B6B;
+}
+
+.buttons {
+	margin-top: 20px;
+}
+
+.buttons > button {
+	background-color: white;
+	border: 2px solid #1A535C;
+	color: #1A535C;
+	padding: 10px 20px;
+	cursor: pointer;
+	transition: 0.4s;
+	font-family: 'Yekan';
+	margin: 0 5px;
+}
+
+.buttons > button:hover {
+	background-color: #1A535C;
+	color: white;
+}
+
+.navigator {
+	padding: 15px 0;
+}
+
+.navigator > a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	border: 2px solid white;
+	margin: 5px;
+	width: 30px;
+	transition: 0.4s;
+}
+
+.navigator > a.current {
+	border: 2px dotted #FF6B6B;
+	color: #FF6B6B;
+}
+
+.navigator > a.answered {
+	color: #4ECDC4;
+	border-color: #4ECDC4;
+}
+
+.navigator > a:hover {
+	color: #FF6B6B;
+	border-color: #FF6B6B;
+}
+
+#finish, #refresh-quiz {
+	background-color: #FF6B6B;
+	border: 2px solid #FF6B6B;
+	cursor: pointer;
+	color: white;
+	padding: 5px 20px;
+	margin-top: 8px;
+	font-family: 'Yekan';
+	transition: 0.4s;
+}
+
+#finish:hover, #refresh-quiz:hover {
+	background-color: #1A535C;
+	border-color: white;
+}
+
+button:disabled {
+	cursor: not-allowed;
+}
+
+#finish-info {
+	padding: 0 25px;
+	font-size: 14px;
+	display: none;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="MOHAMMAD-REZA-TAHERI">
+    <title> IQ Test </title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="quiz-box">
+        <div class="container">
+            <div class="tools-box">
+                <h3> رفتن به سوال </h3>
+                <hr>
+                <div class="navigator">
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(1)" id="go-to-1"> 1 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(2)" id="go-to-2"> 2 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(3)" id="go-to-3"> 3 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(4)" id="go-to-4"> 4 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(5)" id="go-to-5"> 5 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(6)" id="go-to-6"> 6 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(7)" id="go-to-7"> 7 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(8)" id="go-to-8"> 8 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(9)" id="go-to-9"> 9 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(10)" id="go-to-10"> 10 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(11)" id="go-to-11"> 11 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(12)" id="go-to-12"> 12 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(13)" id="go-to-13"> 13 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(14)" id="go-to-14"> 14 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(15)" id="go-to-15"> 15 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(16)" id="go-to-16"> 16 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(17)" id="go-to-17"> 17 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(18)" id="go-to-18"> 18 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(19)" id="go-to-19"> 19 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(20)" id="go-to-20"> 20 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(21)" id="go-to-21"> 21 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(22)" id="go-to-22"> 22 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(23)" id="go-to-23"> 23 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(24)" id="go-to-24"> 24 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(25)" id="go-to-25"> 25 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(26)" id="go-to-26"> 26 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(27)" id="go-to-27"> 27 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(28)" id="go-to-28"> 28 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(29)" id="go-to-29"> 29 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(30)" id="go-to-30"> 30 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(31)" id="go-to-31"> 31 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(32)" id="go-to-32"> 32 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(33)" id="go-to-33"> 33 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(34)" id="go-to-34"> 34 </a>
+                    <a href="javascript:void" class="navigator-link" onclick="displayQuiz(35)" id="go-to-35"> 35 </a>
+                </div>
+                <hr>
+                <button type="button" id="finish"> خاتمه دادن </button>
+                <p id="finish-info"> لطفا برای خاتمه دادن روی دکمه بالا کلیک کنید. </p>
+            </div>
+
+
+            <div class="quiz-box">
+                <img src="img/q1.png" id="question">
+                <div class="choices">
+                    <img class="choice-img" src="img/q1a.png" onclick="answer('a')" id="choice-a">
+                    <img class="choice-img" src="img/q1b.png" onclick="answer('b')" id="choice-b">
+                    <img class="choice-img" src="img/q1c.png" onclick="answer('c')" id="choice-c">
+                    <img class="choice-img" src="img/q1d.png" onclick="answer('d')" id="choice-d">
+                    <img class="choice-img" src="img/q1e.png" onclick="answer('e')" id="choice-e">
+                    <img class="choice-img" src="img/q1f.png" onclick="answer('f')" id="choice-f">
+                </div>
+                <hr>
+                <div class="buttons">
+                    <button type="button" id="prev-question"> قبلی </button>
+                    <button type="button" id="next-question"> بعدی </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="result-box">
+
+        <div class="result-container">
+            <div class="details">
+                <h1> تبریک! آزمون شما خاتمه یافت </h1>
+                <hr>
+                <p> آیکیو شما : <b id="iq"></b> </p>
+                <p> تعداد غلط: <b id="wrongs-count"></b> </p>
+                <button type="button" id="refresh-quiz"> پاسخ دهی مجدد </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/main.js" charset="utf-8"></script>
+</body>
+
+</html>
